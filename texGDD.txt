@@ -134,7 +134,7 @@ Do  realizacji  gry  nie  będzie  konieczne  nabycie  żadnych  licencji  zwią
 \newpage
 
 \section{Tryby}
-    \subsection{Tryb kampani}]
+    \subsection{Tryb kampani}
 Podstawowym trybem gry \emph{TANKTALE} jest forma kampanii. Gracz rozpoczyna swoją przygodę z grą od pierwszej planszy w obrębie danej grupy, a następnie po jej ukończeniu ma dostęp do kolejnej mapy.
     \subsection{Tryb Przetrwania}
 Innym trybem gry jest tryb przetrwania \emph{(survival mode)}. Gracz rozpoczyna grę z wybranym wyposarzeniem na otwartej mapie i jego zadaniem jest pokonanie jak największej liczby przeciwników - uzyskanie jak największego wyniku(przetrwany czas + punkty za zabite potwory).
@@ -211,6 +211,8 @@ Gra \emph{TANKTALE} jest zaprojektowana na urządzenia posiadajace klawiaturę o
     \subsection{Realia świata}
     Świat w grze jest wyniszczony wojną nuklearną. Większość obszarów stanowi pustynia. Od czasu do czasu występują zniszczone miasta i wraki różnych pojazdów. Teren nie jest mocno górzysty, ale występują wertepy i wysepki. Całą planszę otaczają skały nie pozwalające wypaść poza mapę. 
 \item Hangary - są miejscem w którym można przespać się(zmienić godzinę i porę dnia). Można handlować, naprawiać pojazd, ulepszać pojazd, rozdawać umiejętności. Hangar będzie miejscem po którym nie można się poruszać. Będzie obrazkiem na którym można wybrać interesujące nas opcje(handlu/snu/umiejętności/zapisu gry).
+\item Miasta są pełne zasobów i waluty złomu, ale jest w nich więcej przeciwników i są unikatowi trudni przeciwnicy. Miasto za dnia to pewna śmierć. Nocą w trybie skradania można je powoli eksplorować.
+\item Pustynia jest bezpieczna w nocy, a za dnia można spotka tam potwory.
     \subsection{Tło fabularne}
     Historia w grze na starcie opowiada: 
     \begin{enumerate}
@@ -473,10 +475,33 @@ Gra \emph{TANKTALE} jest zaprojektowana na urządzenia posiadajace klawiaturę o
     
 \section{Inne tryby rozgrywki}
     \subsection{Wprowadzenie}
+    W poniższym rozdziale opisane są zidentyfikowane tryby rozgrywki z pominię-ciem głównego trybu (samej rozgrywki), na który przeznaczona została więk-szość poprzednich rozdziałów.
     
     \subsection{Tryby związane z menu głównym}
+    \begin{enumerate}
+        \item ekran powitalny
+        Ekran powitalny jest wczytywany i uruchamiany od razu po uruchomieniu apli-kacji. Jego przeznaczeniem jest poinformowanie gracza o włączanej aplikacji iwprowadzenie w klimat gry. W trakcie wyświetlania ekranu powitalnego łado-wane są zasoby gry – w związku z tym, na ekranie jest wyświetlana informacjao procesie ładowania, a po jego zakończeniu pojawia się informacja zachęcającaużytkownika do dotknięcia kliknięcia 'Enter' i przejścia do menu głównego.
+        \item Menu główne
+        Menu główne jest jednym z dwóch głównych trybów rozgrywki, któremu podle-gają inne ekrany i jest uruchamiane po ekranie powitalnym. Umożliwia m.in. pod-jęcie rozgrywki (ostatniej lub na jednym z wcześniej odkrytych poziomów), zmia-nę  ustawień  gry,  odwiedzenie  sklepu  i  przeglądnięcie  innych  informacji. 
+        \item Osiągnięcia
+        \item Ustawienia gry
+        \begin{itemize}
+            \item zmiana głośności muzyki
+            \item zmiana głoścności efektów dzwiękowych
+            \item Zmmiana ogólnej głośności gry
+        \end{itemize}
+        
+    \end{enumerate}
     
     \subsection{Tryby związane z rozgrywką}
+    \begin{enumerate}
+        \item Ekran informacji o poziomie
+        \item Rozgrywka
+        \item Ekran końca planszy
+        
+    \end{enumerate}
+        
+    
     
     \newpage
     
