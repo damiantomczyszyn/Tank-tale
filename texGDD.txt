@@ -21,6 +21,7 @@
 	\item Wprowadzenie
 	    \item[*] Przyjęte konwencje
 	    \item[*] Rejestr zmian
+	     \item[*] Rejestr Planów
 	\item Informacje ogólne
 	    \item[*] Ogólny opis gry
 	    \item[*] Motywacja i inspiracje
@@ -97,6 +98,20 @@
 	15.10.2020 & Damian Tomczyszyn & Utworzenie struktury dokumentu\\
 	\hline
 	31.10.2020 & Damian Tomczyszyn & Stworzenie spisu treści \\
+	\hline
+	07.11.2020 & Damian Tomczyszyn & Stworzenie tabeli planów tworzenia \\
+	\hline
+\end{tabular}
+
+
+    \subsection{Rejestr planów}
+\begin{tabular}{|l|r|}
+	\hline
+	Data  & Komentarz\\
+	\hline
+	15.10.2020 &  ...u\\
+	\hline
+	31.10.2020 & .... \\
 	\hline
 \end{tabular}
 
