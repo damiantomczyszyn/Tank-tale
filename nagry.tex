@@ -31,7 +31,6 @@
 	       \begin{enumerate}
 	    \item[*] Silnik gry
 	    \end{enumerate}
-	    \item[*] Wykorzystywane licencje
 	    \item[*] Język gry
 	\item Tryby
 	    \item[*] Tryb Kampani
@@ -101,16 +100,27 @@
 	\hline
     16.11.2020  & Poprawienie spójności akcji gry oraz utworzenie terminarzu\\
 	\hline
+	20.11.2020  & aktualizacja terminarzu\\
+	\hline
+	
 \end{tabular}
 
    \subsection{Terminy}
 \begin{tabular}{|l|c|}
 	\hline
-	Data Modyfikacji  & Komentarz\\
+	Data  & Komentarz\\
 	\hline
 	17.11.2020  & Wybranie i oskryptowanie modelu głównej postaci\\
 	\hline
 	19.11.2020  & Rozpoczęcie tworzenia świata\\
+	\hline
+	1.12.2020  & Przygotowanie grafik(pojazdów i elementów mapy)\\
+	\hline
+	10.12.2020  & Przygotowanie podkładu muzycznego\\
+	\hline
+	15.12.2020  & Skończenie 1 poziomu mapy\\
+		\hline
+	22.12.2020  & Przygotowanie kilku poziomów oraz ukończenie 1 poziomu jako całości\\
 
 	\hline
 \end{tabular}
@@ -119,11 +129,11 @@
 
 \section{Informacje ogólne}
     \subsection{Ogólny opis gry}
-    \emph{TANKTALE} jest grą RPG o tematyce rozwoju bohatera(czołgu z załogą). Gra jest przeznaczona dla jednego gracza, w której celem rozgrywki jest rozwijanie swojego pojazdu. Akcja gry rozgrywa się w świecie zniszczonym przez wojnę nuklearną. Sterujemy czołgiem który wyposarzony jest w działo, które jest główną bronią która pomaga pokonać przeciwników.Sama  idea  gry  topowrót do mechanizmów znanych ze starszych, grywalnych, prostych gier z po-wiewem świeżości w postaci większego systemu ulepszeń. Pojazd(bohater) musi oczyszyczszać strefy zwane \emph{hangarami} które po oczyszczeniu stają się bezpieczną zoną w której można handlować(kupować/sprzedawać przedmioty), dokonywać ulepszeń pojazdu, rozwijać umiejętności załogi oraz przeczekać do konkretnej godziny(możliwość szybkiej zmiany dnia na noc i na odwrót). 
+    \emph{TANKTALE} jest grą RPG o tematyce rozwoju bohatera(czołgu . Gra jest przeznaczona dla jednego gracza, w której celem rozgrywki jest rozwijanie swojego pojazdu. Akcja gry rozgrywa się w świecie zniszczonym przez wojnę. Sterujemy czołgiem który wyposarzony jest w działo, które jest główną bronią która pozwala pokonać przeciwników.Sama  idea  gry  topowrót do mechanizmów znanych ze starszych, grywalnych, prostych gier z powiewem świeżości w postaci większego systemu ulepszeń. Pojazd(bohater) musi oczyszyczszać strefy zwane \emph{hangarami} które po oczyszczeniu stają się bezpieczną zoną w której można handlować(kupować/sprzedawać przedmioty), dokonywać ulepszeń pojazdu oraz przeczekać do konkretnej godziny(możliwość szybkiej zmiany dnia na noc i na odwrót). 
     
     \subsection{Motywacja i inspiracje}
     \begin{itemize}
-        \item Tytułem inspirowałem się na grze która mnie mocno poruszyła- UnderTale.
+        \item Tytułem inspirowałem się na grze która była dla mnie główną inspiracją - UnderTale.
         \item Czas rozgrywania się akcji, oraz niektórzy przeciwnicy to pomysł pożyczony z serii Metro.
     \end{itemize}
     \subsection{Platformy docelowe}
@@ -139,9 +149,7 @@
      \item Konieczne  jest  stworzenie  rysunkowego  i  estetycznego  stylu  graficznego,aby gra zachęcała odbiorców warstwą wizualną \item Silnik Godot
 \end{enumerate}
 
-\subsection{Wykorzystane licencje}
-Do  realizacji  gry  nie  będzie  konieczne  nabycie  żadnych  licencji  związanych  zpodjętymi decyzjami technologicznymi, gdyż przyjęte środowisko ma charakterotwarty i darmowy. Nie ma również potrzeby starania się o kupno licencji zwią-zanych ze światem gry lub patentami, gdyż małe fragmenty świata fabularnegogry  są  stworzone  całkowicie  przez  autorów,  natomiast  mechanika  podobnychgier nie jest objęta ochroną prawną
-\newpage
+
 
 \section{Tryby}
     \subsection{Tryb kampani}
@@ -165,6 +173,16 @@ Gra \emph{TANKTALE} jest zaprojektowana na urządzenia posiadajace klawiaturę o
     
 \end{itemize}
     \subsection{HUD}
+    
+    \begin{itemize}
+    \item Pasek życia
+    \item Liczba naboi
+    \item Ilość paliwa
+    \item Ilość waluty
+    
+    
+\end{itemize}
+    
     \subsection{Praca kamery}
     Plansza  wraz  z  wszystkimi  elementami  ukazywana  jest  w  dwóch  wymiarach,jako  widok  z  góry,  podobny  do  tego  znanego  z  gierDyna  BlasterczyPac-Man.
     \newpage
@@ -189,15 +207,15 @@ Gra \emph{TANKTALE} jest zaprojektowana na urządzenia posiadajace klawiaturę o
     \begin{itemize}
         \item przeciwnicy
         \begin{enumerate}
-            \item Trigeny/mutanty
+            \item Potwory
             \item Drzewce
             \item Inne czołgi
         \end{enumerate}
         \item sojusznicze czołgi
         \item Zaopatrzeniowcy
-        \item Nietoperze
+        \item Ptaki
         \item Pająki
-        \item Pułapki
+        \item Pułapki(działka, jakieś ukryte zabierające hp)
         
     \end{itemize}
     \subsection{Warunki ukończenia gry}
@@ -245,7 +263,7 @@ Gra \emph{TANKTALE} jest zaprojektowana na urządzenia posiadajace klawiaturę o
     \subsection{Waluta i surowce}
     \begin{enumerate}
         \item Paliwo
-        \item Złom(waluta)
+        \item Metal(waluta)
     \end{enumerate}
     \newpage
     
