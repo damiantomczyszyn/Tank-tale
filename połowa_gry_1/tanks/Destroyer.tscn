@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://tanks/EnemyTank.tscn" type="PackedScene" id=1]
+[ext_resource path="res://bullet/EnemyBulletwhite.tscn" type="PackedScene" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 65.7465, 49.2114 )
+
+[node name="Destroyer" instance=ExtResource( 1 )]
+collision_layer = 2147483652
+collision_mask = 2147483938
+Bullet = ExtResource( 2 )
+speed = 250
+rotation_speed = 20.0
+gun_cooldown = 1.0
+max_health = 180
+turret_speed = 2.5
+detect_radius = 650
+
+[node name="Body" parent="." index="0"]
+region_rect = Rect2( 258, 542, 134, 113 )
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2( 0, 0 )
+shape = SubResource( 1 )
+
+[node name="Turret" parent="." index="2"]
+position = Vector2( 35, -1.5 )
+region_rect = Rect2( 61, 37, 50, 24 )

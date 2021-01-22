@@ -1,0 +1,142 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/UI/barHorizontal_green_mid 200.png" type="Texture" id=1]
+[ext_resource path="res://assets/UI/glassPanel_200.png" type="Texture" id=2]
+[ext_resource path="res://UI/HUD.gd" type="Script" id=3]
+[ext_resource path="res://assets/Xolonium-Regular.ttf" type="DynamicFontData" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 25
+font_data = ExtResource( 4 )
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource( 3 )
+
+[node name="Margin" type="MarginContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/margin_right = 20
+custom_constants/margin_top = 20
+custom_constants/margin_left = 20
+custom_constants/margin_bottom = 20
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Container" type="HBoxContainer" parent="Margin"]
+margin_left = 20.0
+margin_top = 20.0
+margin_right = 1004.0
+margin_bottom = 580.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HealthBar" type="TextureProgress" parent="Margin/Container"]
+margin_right = 200.0
+margin_bottom = 560.0
+value = 90.0
+texture_over = ExtResource( 2 )
+texture_progress = ExtResource( 1 )
+
+[node name="TextureRect" type="TextureRect" parent="Margin/Container"]
+margin_left = 204.0
+margin_right = 204.0
+margin_bottom = 560.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="a" type="MarginContainer" parent="."]
+margin_left = 21.0
+margin_top = 52.0
+margin_right = 127.0
+margin_bottom = 458.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="b" type="VBoxContainer" parent="a"]
+margin_right = 106.0
+margin_bottom = 406.0
+rect_min_size = Vector2( 0, 40 )
+size_flags_stretch_ratio = 0.0
+custom_constants/separation = 20
+
+[node name="Speed" type="Button" parent="a/b"]
+visible = false
+margin_right = 106.0
+margin_bottom = 20.0
+text = "+Speed"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DMG" type="Button" parent="a/b"]
+visible = false
+margin_top = 40.0
+margin_right = 106.0
+margin_bottom = 60.0
+text = "+DMG"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Reload" type="Button" parent="a/b"]
+visible = false
+margin_top = 80.0
+margin_right = 106.0
+margin_bottom = 100.0
+text = "+reload"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Amo_fly_speed" type="Button" parent="a/b"]
+visible = false
+margin_top = 120.0
+margin_right = 106.0
+margin_bottom = 140.0
+text = "ammos"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tank_rotation" type="Button" parent="a/b"]
+visible = false
+margin_top = 160.0
+margin_right = 106.0
+margin_bottom = 180.0
+text = "+ROT"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tank_hp" type="Button" parent="a/b"]
+visible = false
+margin_top = 200.0
+margin_right = 106.0
+margin_bottom = 220.0
+text = "+HP"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="pozycja" type="Label" parent="."]
+margin_left = 230.0
+margin_top = 15.0
+margin_right = 552.0
+margin_bottom = 80.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.0235294, 0.862745, 0.764706, 1 )
+text = "position
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="a/b/Speed" to="." method="_on_Speed_pressed"]
+[connection signal="pressed" from="a/b/DMG" to="." method="_on_dmg"]
+[connection signal="pressed" from="a/b/Reload" to="." method="_on_Reload_pressed"]
+[connection signal="pressed" from="a/b/Amo_fly_speed" to="." method="_on_Amo_fly_speed_pressed"]
+[connection signal="pressed" from="a/b/Tank_rotation" to="." method="_on_Tank_rotation_pressed"]
+[connection signal="pressed" from="a/b/Tank_hp" to="." method="_on_Tank_hp_pressed"]

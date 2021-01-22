@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://tanks/EnemyTank.tscn" type="PackedScene" id=1]
+[ext_resource path="res://bullet/Enemybulletgreen.tscn" type="PackedScene" id=2]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 25.4248
+
+[node name="redturret" instance=ExtResource( 1 )]
+Bullet = ExtResource( 2 )
+speed = 0
+gun_cooldown = 0.6
+max_health = 60
+turret_speed = 2.6
+detect_radius = 600
+
+[node name="Body" parent="." index="0"]
+region_rect = Rect2( 172, 137, 48, 48 )
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2( 0, 0 )
+shape = SubResource( 1 )
+
+[node name="Turret" parent="." index="2"]
+position = Vector2( -2, 0.187 )
+flip_h = false
+region_rect = Rect2( 272, 60, 63, 28 )
