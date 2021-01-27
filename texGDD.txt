@@ -35,7 +35,7 @@
 	    \item[*] Język gry
 	\item Tryby
 	    \item[*] Tryb Kampani
-	    \item[*] Tryb Przetrwania
+	    \item[*] Tryb Przetrwania - Nie ukończony
     \item Interfejs użytkownika
         \item[*] Obsługa gry
 	    \item[*] HUD
@@ -101,31 +101,44 @@
 	\hline
 	07.11.2020 & Damian Tomczyszyn & Stworzenie tabeli planów tworzenia \\
 	\hline
+	27.01.2021 & Damian Tomczyszyn & Uzupełnianie zaległości w dokumencie \\
+	\hline
+	27.01.2021 & Damian Tomczyszyn & Dodanie opisu przeciwników  \\
+	\hline
+	27.01.2021 & Damian Tomczyszyn &  Uaktualnienie sposobów na wygranie/przegranie  \\
+	\hline
 \end{tabular}
 
 
     \subsection{Rejestr planów}
-\begin{tabular}{|l|r|}
+\begin{tabular}{|l|c|}
 	\hline
 	Data  & Komentarz\\
 	\hline
-	15.10.2020 &  ...u\\
+	15.10.2020 &  Zakres pierwszej mapy\\
 	\hline
-	31.10.2020 & .... \\
+	31.10.2020 & Stworzenie przeciwników\\
 	\hline
+	20.11.2020 & Stylizacja HUD\\
+	\hline
+	20.12.2020 & Utworzenie obiektów statycznych\\
+	\hline
+	10.1.2021 & Stworzenie i wprowadzenie scen wygrana/\\
+	\hline
+	
 \end{tabular}
 
 \newpage
 
 \section{Informacje ogólne}
     \subsection{Ogólny opis gry}
-    \emph{TANKTALE} jest grą RPG o tematyce rozwoju bohatera(czołgu z załogą). Gra jest przeznaczona dla jednego gracza, w której celem rozgrywki jest rozwijanie swojego pojazdu. Akcja gry rozgrywa się w świecie zniszczonym przez wojnę nuklearną(prawdopodobnie IIIwojnę światową). Sterujemy czołgiem który wyposarzony jest w działko które jest główną bronią która pomaga pokonać przeciwników.Sama  idea  gry  topowrót do mechanizmów znanych ze starszych, grywalnych, prostych gier z po-wiewem świeżości w postaci większego systemu ulepszeń. Pojazd(bohater) musi oczyszyczszać strefy zwane \emph{hangarami} które po oczyszczeniu stają się bezpieczną zoną w której można handlować(kupować/sprzedawać przedmioty), dokonywać ulepszeń pojazdu, rozwijać umiejętności załogi oraz przeczekać do konkretnej godziny(możliwość szybkiej zmiany dnia na noc i na odwrót). 
+    \emph{TANKTALE} jest grą RPG o tematyce rozwoju bohatera(czołgu). Gra jest przeznaczona dla jednego gracza, w której celem rozgrywki jest zebranie wszystkich punktów kontrolnych i dotarcie do bazy końcowej. Akcja gry rozgrywa się w świecie o którym nic nie wiemy(typowa platforówka). Sterujemy czołgiem, który wyposarzony jest w działko, które jest jedyna bronią którą możemy zniszczyć przeciwników.Sama  idea  gry  to typowe sterowanie pojazdem który strzela i ma jakieś zadanie do wypełnienia. Pojazd musi oczyszyczszać strefy i zaliczać punkty kontrolne zwane \emph{hangarami}. 
     
     \subsection{Motywacja i inspiracje}
     \begin{itemize}
-        \item Tytułem inspirowałem się na grze która mnie mocno poruszyła- UnderTale.
-        \item Czołg jako postać oraz kamera celowanie i poruszanie się pojazdu to pomysł zapożyczony z gry World of Tanks.
-        \item Czas rozgrywania się akcji, oraz niektórzy przeciwnicy to pomysł pożyczony z serii Metro.
+        \item Tytułem inspirowałem się na grze która jest jedną z moich ulubionych - UnderTale.
+        \item Czołg jako postać oraz poruszanie się pojazdu to pomysł zapożyczony z gry World of Tanks.
+        
     \end{itemize}
     \subsection{Platformy docelowe}
     Platformą docelową gry są komputery stacjonarne wyposażone w system Windows.
@@ -133,24 +146,20 @@
     Odbiorcami docelowymi są zarówno dorośli jak i młodzi gracze.
     \subsection{Decyzje technologiczne}
     \begin{enumerate}
-       \item C sharp - Język w którym gra jest tworzona
-    \item Sterowanie za pomocą "WASD" oraz myszki
-     \item Możliwość obrotu kamery strzałkami
-     \item Konieczne  jest  stworzenie  rysunkowego  i  estetycznego  stylu  graficznego,aby gra zachęcała odbiorców warstwą wizualną
-     
-      
+       \item GD script- Język w którym gra jest tworzona.
+    \item Sterowanie za pomocą "WASD" oraz myszki.
+    \item Grafiki zapożyczone od Kenney.
+    \item Silnik gry Godot.
     
-
-    \item Silnik Godot
 \end{enumerate}
 \subsection{Wykorzystane licencje}
-Do  realizacji  gry  nie  będzie  konieczne  nabycie  żadnych  licencji  związanych  zpodjętymi decyzjami technologicznymi, gdyż przyjęte środowisko ma charakterotwarty i darmowy. Nie ma również potrzeby starania się o kupno licencji zwią-zanych ze światem gry lub patentami, gdyż małe fragmenty świata fabularnegogry  są  stworzone  całkowicie  przez  autorów,  natomiast  mechanika  podobnychgier nie jest objęta ochroną prawną
+Do  realizacji  gry  nie  będzie  konieczne  nabycie  żadnych  licencji  związanych  zpodjętymi decyzjami technologicznymi, gdyż przyjęte środowisko ma charakterotwarty i darmowy. Nie ma również potrzeby starania się o kupno licencji związanych ze światem gry lub patentami, gdyż małe fragmenty świata fabularnegogry  są  stworzone  całkowicie  przez  autorów,  natomiast  mechanika  podobnych gier nie jest objęta ochroną prawną.
 \newpage
 
 \section{Tryby}
     \subsection{Tryb kampani}
-Podstawowym trybem gry \emph{TANKTALE} jest forma kampanii. Gracz rozpoczyna swoją przygodę z grą od pierwszej planszy w obrębie danej grupy, a następnie po jej ukończeniu ma dostęp do kolejnej mapy.
-    \subsection{Tryb Przetrwania}
+Podstawowym trybem gry \emph{TANKTALE} jest forma kampanii. Gracz rozpoczyna swoją przygodę z grą w lewym górnym rogu planszy. Musi zdobyć 4 punkty kontrolne(hangary) i dotrzeć do bazy. Pozycje hangarów będą wyświetlane, a po zdobyciu wszystkich wyświetlana będzie pozycja bazy końcowej. Klikając PPM można zmienić wyświetlaną pozycje hangaru na inny. Stracisz całe hp - przegrywasz. Tu nie ma licznika żyć. Życie ma się jedno, ale za to jest pasek zdrowa który informuje nas w jak ciężkiej sytuacji się znajdujemy.
+    \subsection{Tryb Przetrwania - Nie ukończony}
 Innym trybem gry jest tryb przetrwania \emph{(survival mode)}. Gracz rozpoczyna grę z wybranym wyposarzeniem na otwartej mapie i jego zadaniem jest pokonanie jak największej liczby przeciwników - uzyskanie jak największego wyniku(przetrwany czas + punkty za zabite potwory).
     \newpage
     
@@ -159,63 +168,51 @@ Innym trybem gry jest tryb przetrwania \emph{(survival mode)}. Gracz rozpoczyna 
 Gra \emph{TANKTALE} jest zaprojektowana na urządzenia posiadajace klawiaturę oraz mysz. Więc sterowanie jest dość proste:
 \begin{itemize}
     \item Klawisze WASD - poruszanie się pojazdu.
-    \item Mysz- poruszanie się kamery, celowanie(ppm) , oddawanie strzału(lpm).
-    \item Klawisz R - ładowanie
-    \item strzałki - poruszanie się kamerą.
-    \item shift - zmniejszenie możliwości wykrycia
-    \item crtl + ppm - badanie celu (hp przeciwnika)
-    \item tab Przełączanie pomiędzy załogą w celu uzyskania dokładniejszych informacji
-    \item 1,2,3,4,5 zmiana rodzaju amunicji
+    \item Mysz -  oddawanie strzału(lpm).
+    \item ESC - Powrót do menu 
+    \item W przypadku menu informacja o sterowaniu będzie pokazywać się na bierząco.
     
 \end{itemize}
     \subsection{HUD}
     \subsection{Praca kamery}
-    Plansza  wraz  z  wszystkimi  elementami  ukazywana  jest  w  dwóch  wymiarach,jako  widok  z  góry,  podobny  do  tego  znanego  z  gierDyna  BlasterczyPac-Man.
+    Plansza  wraz  z  wszystkimi  elementami  ukazywana  jest  w  dwóch  wymiarach,jako  widok  z  góry,  podobny  do  tego  znanego  z  gier Dyna Blaster czy Pac-Man.
     \newpage
     
 \section{Mechanika podstawowa}
     \subsection{Personifikacja gracza}
-    Gracz steruje bohaterem(pojazdem-czołgiem) przemierzającym świat i starajacym się oczyszczać teren.
+    Gracz steruje czołgiem przemierzającym świat i starajacym się oczyszczać teren. Gracz musi zdobyć wszystkie hangary aby ukoczyć mapę i jednocześnie wygrać grę. 
     \subsection{Plansza}
-    Rozgrywka toczy się na pewnej planszy. Jak wspominano wcześniej jest to powojenny świat z dominującą pustynną tematyką. Można w nim będzie spotka wiele wraków pojazdów oraz zniszczone i opuszczone miasta.
+    Rozgrywka toczy się na pewnej planszy przypominającej prostokąt. Jest to świat z dominującą pustynną tematyką. Można ujrzeć wiele kaktusów oraz skał. Gdzieniegdzie będą rosły większe krzaki w których może być ukryta beczka z zestawem naprawczym przywracającym 20 punktów zdrowia.
     \subsection{Poruszanie się}
-    Gracz może poruszać się WASD(nie podczas interakcji).
+    Gracz może poruszać się WASD.
     \subsection{Obiekty statyczne}
     \begin{itemize}
-        \item Budynki
-        \item Wraki
-        \item Mosty
+        \item Drzewa
+        \item Kaktusy
         \item Skały
-        \item Hangary
+        \item Hangary jeśli zaliczony to znika.
         
     \end{itemize}
     \subsection{Obiekty dynamiczne}
     \begin{itemize}
-        \item przeciwnicy
+        \item Przeciwnicy
         \begin{enumerate}
-            \item Trigeny/mutanty
-            \item Drzewce
-            \item Inne czołgi
+            \item Wrogie czołgi
+            \item Działka
+           
         \end{enumerate}
-        \item sojusznicze czołgi
-        \item Zaopatrzeniowcy
-        \item Nietoperze
-        \item Pająki
-        \item Pułapki
         
     \end{itemize}
     \subsection{Warunki ukończenia gry}
 \begin{itemize}
     \item Wygrana
     \begin{enumerate}
-        \item Zabicie wszystkich przeciwników.
-        \item Wykonanie wszystkich questów.
-        \item Przejęcie wszystkich \emph{hangarów}.
+       
+        \item Przejęcie wszystkich \emph{hangarów} i dotarcie do bazy.
     \end{enumerate}
     \item Przegrana
     \begin{enumerate}
-        \item Strata całego HP.
-        \item Strata paliwa i brak możliwości wezwania zrzutu zaopatrzenia
+      Strata całego hp.
     \end{enumerate}
 \end{itemize}
     
@@ -227,18 +224,14 @@ Gra \emph{TANKTALE} jest zaprojektowana na urządzenia posiadajace klawiaturę o
     \begin{itemize}
  
 
-    \item Świat w grze jest wyniszczony wojną nuklearną. Większość obszarów stanowi pustynia. Od czasu do czasu występują zniszczone miasta i wraki różnych pojazdów. Teren nie jest mocno górzysty, ale występują wertepy i wysepki. Całą planszę otaczają skały nie pozwalające wypaść poza mapę. 
-\item Hangary - są miejscem w którym można przespać się(zmienić godzinę i porę dnia). Można handlować, naprawiać pojazd, ulepszać pojazd, rozdawać umiejętności. Hangar będzie miejscem po którym nie można się poruszać. Będzie obrazkiem na którym można wybrać interesujące nas opcje(handlu/snu/umiejętności/zapisu gry).
+    \item Świat w grze jest bliżej nie opisany. Większość obszarów stanowi pustynia. Od czasu do czasu występują wrogie jednoski i obszary bardziej strzeżone. Teren nie jest  górzysty. Plansza ma kształt prostokątu, gdzie baza znajduje się w prawym dolnym rogu. 
+\item Hangary - punkt kontrolny do zaliczenia. Po najechaniu na niego znika.
     \end{itemize}
     \subsection{Tło fabularne}
-    Historia w grze na starcie opowiada: 
+   Brak specjalnie przedstawionego tła. W menu można zobaczyć cele gry oraz opis przeciwników.
     \begin{enumerate}
-        \item Jak doszło do wojny
-        \item Skąd wzięły się czołgi i hangary
-        \item Jaka jest waluta i co jest ważne w tym świecie
-        \item Jak powstały mutanty
-        \item I jak to jest z nacjami
-        \item Oraz wprowadza gracza w pierwsze zadanie i samouczek
+        \item Brak
+        
     \end{enumerate}
     \subsection{Dzwięki i muzyka}
     
@@ -246,10 +239,9 @@ Gra \emph{TANKTALE} jest zaprojektowana na urządzenia posiadajace klawiaturę o
     \subsection{Styl graficzny}
     
     
-    \subsection{Waluta i surowce}
+    \subsection{Poziomy}
     \begin{enumerate}
-        \item Paliwo
-        \item Złom(waluta)
+        \item Punkty doświadczenia dostaje się za zniszczenie dowolnego typu czołgu. Zniszczenie działka nie dodaje pkt poziomu. 
     \end{enumerate}
     \newpage
     
