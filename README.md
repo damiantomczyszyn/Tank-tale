@@ -1,2 +1,4 @@
 # programowanie-gier
-Pliki tex, kopia txt na której pracuję oraz grafiki jpg
+Plik tex GDD
+Gra w częściach
+Dokument GDD w pdf
