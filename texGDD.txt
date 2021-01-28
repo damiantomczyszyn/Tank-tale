@@ -73,7 +73,7 @@
 	    \item[*] Tryby związane z rozgrywką 
 
 	\item  Informacje dodatkowe
-	   
+	    \item[*] Kontynuacja
 	\end{enumerate}
 	
 	
@@ -107,6 +107,10 @@
 	\hline
 	27.01.2021 & Damian Tomczyszyn &  Uaktualnienie sposobów na wygranie/przegranie  \\
 	\hline
+	28.01.2021 & Damian Tomczyszyn &  Drobne poprawki oraz dopisanie 'Informacji dodatkowych'  \\
+	\hline
+	29.01.2021 & Damian Tomczyszyn &  Wysłanie Gry  \\
+	\hline
 \end{tabular}
 
 
@@ -123,7 +127,9 @@
 	\hline
 	20.12.2020 & Utworzenie obiektów statycznych\\
 	\hline
-	10.1.2021 & Stworzenie i wprowadzenie scen wygrana/\\
+	10.1.2021 & Stworzenie i wprowadzenie scen wygrana/przegrana\\
+	\hline
+	29.01.2021 &   Wysłanie Gry  \\
 	\hline
 	
 \end{tabular}
@@ -132,12 +138,13 @@
 
 \section{Informacje ogólne}
     \subsection{Ogólny opis gry}
-    \emph{TANKTALE} jest grą RPG o tematyce rozwoju bohatera(czołgu). Gra jest przeznaczona dla jednego gracza, w której celem rozgrywki jest zebranie wszystkich punktów kontrolnych i dotarcie do bazy końcowej. Akcja gry rozgrywa się w świecie o którym nic nie wiemy(typowa platforówka). Sterujemy czołgiem, który wyposarzony jest w działko, które jest jedyna bronią którą możemy zniszczyć przeciwników.Sama  idea  gry  to typowe sterowanie pojazdem który strzela i ma jakieś zadanie do wypełnienia. Pojazd musi oczyszyczszać strefy i zaliczać punkty kontrolne zwane \emph{hangarami}. 
+    \emph{TANKTALE} jest grą RPG o tematyce rozwoju bohatera(czołgu). Gra jest przeznaczona dla jednego gracza, w której celem rozgrywki jest zebranie wszystkich punktów kontrolnych i dotarcie do bazy końcowej. Akcja gry rozgrywa się w świecie o którym nic nie wiemy(typowa platforówka). Sterujemy czołgiem, który wyposażony jest w działko, które jest jedyna bronią którą możemy zniszczyć przeciwników.Sama  idea  gry  to typowe sterowanie pojazdem który strzela i ma jakieś zadanie do wypełnienia. Pojazd musi oczyszyczszać strefy i zaliczać punkty kontrolne zwane \emph{hangarami}. 
     
     \subsection{Motywacja i inspiracje}
     \begin{itemize}
         \item Tytułem inspirowałem się na grze która jest jedną z moich ulubionych - UnderTale.
-        \item Czołg jako postać oraz poruszanie się pojazdu to pomysł zapożyczony z gry World of Tanks.
+        \item Czołg jako główny bohater to inspiracja z gry World of Tanks.
+        \item Dźwięki z innych gier, które uważam za warte uwagi.
         
     \end{itemize}
     \subsection{Platformy docelowe}
@@ -146,19 +153,19 @@
     Odbiorcami docelowymi są zarówno dorośli jak i młodzi gracze.
     \subsection{Decyzje technologiczne}
     \begin{enumerate}
-       \item GD script- Język w którym gra jest tworzona.
+       \item GD script - Język w którym gra jest tworzona.
     \item Sterowanie za pomocą "WASD" oraz myszki.
     \item Grafiki zapożyczone od Kenney.
     \item Silnik gry Godot.
     
 \end{enumerate}
 \subsection{Wykorzystane licencje}
-Do  realizacji  gry  nie  będzie  konieczne  nabycie  żadnych  licencji  związanych  zpodjętymi decyzjami technologicznymi, gdyż przyjęte środowisko ma charakterotwarty i darmowy. Nie ma również potrzeby starania się o kupno licencji związanych ze światem gry lub patentami, gdyż małe fragmenty świata fabularnegogry  są  stworzone  całkowicie  przez  autorów,  natomiast  mechanika  podobnych gier nie jest objęta ochroną prawną.
+Do  realizacji  gry  nie  będzie  konieczne  nabycie  żadnych  licencji  związanych  zpodjętymi decyzjami technologicznymi, gdyż przyjęte środowisko ma charakterotwarty i darmowy. Nie ma również potrzeby starania się o kupno licencji związanych ze światem gry lub patentami, gdyż gra nie będzie sprzedawana,  natomiast  mechanika  podobnych gier nie jest objęta ochroną prawną.
 \newpage
 
 \section{Tryby}
     \subsection{Tryb kampani}
-Podstawowym trybem gry \emph{TANKTALE} jest forma kampanii. Gracz rozpoczyna swoją przygodę z grą w lewym górnym rogu planszy. Musi zdobyć 4 punkty kontrolne(hangary) i dotrzeć do bazy. Pozycje hangarów będą wyświetlane, a po zdobyciu wszystkich wyświetlana będzie pozycja bazy końcowej. Klikając PPM można zmienić wyświetlaną pozycje hangaru na inny. Stracisz całe hp - przegrywasz. Tu nie ma licznika żyć. Życie ma się jedno, ale za to jest pasek zdrowa który informuje nas w jak ciężkiej sytuacji się znajdujemy.
+Podstawowym trybem gry \emph{TANKTALE} jest forma kampanii. Gracz rozpoczyna swoją przygodę z grą w lewym górnym rogu planszy. Musi zdobyć 4 punkty kontrolne(hangary) i dotrzeć do bazy. Klikając PPM można zmienić wyświetlaną pozycje hangaru na inny. Stracisz całe hp - przegrywasz. Tu nie ma licznika żyć. Życie ma się jedno, ale za to jest pasek zdrowa który informuje nas w jak ciężkiej sytuacji się znajdujemy.
     \subsection{Tryb Przetrwania - Nie ukończony}
 Innym trybem gry jest tryb przetrwania \emph{(survival mode)}. Gracz rozpoczyna grę z wybranym wyposarzeniem na otwartej mapie i jego zadaniem jest pokonanie jak największej liczby przeciwników - uzyskanie jak największego wyniku(przetrwany czas + punkty za zabite potwory).
     \newpage
@@ -180,7 +187,7 @@ Gra \emph{TANKTALE} jest zaprojektowana na urządzenia posiadajace klawiaturę o
     
 \section{Mechanika podstawowa}
     \subsection{Personifikacja gracza}
-    Gracz steruje czołgiem przemierzającym świat i starajacym się oczyszczać teren. Gracz musi zdobyć wszystkie hangary aby ukoczyć mapę i jednocześnie wygrać grę. 
+    Gracz steruje czołgiem przemierzającym świat i starajacym się oczyszczać teren z przeciwników oraz musi zdobyć wszystkie hangary aby ukoczyć mapę i jednocześnie wygrać grę. 
     \subsection{Plansza}
     Rozgrywka toczy się na pewnej planszy przypominającej prostokąt. Jest to świat z dominującą pustynną tematyką. Można ujrzeć wiele kaktusów oraz skał. Gdzieniegdzie będą rosły większe krzaki w których może być ukryta beczka z zestawem naprawczym przywracającym 20 punktów zdrowia.
     \subsection{Poruszanie się}
@@ -191,6 +198,7 @@ Gra \emph{TANKTALE} jest zaprojektowana na urządzenia posiadajace klawiaturę o
         \item Kaktusy
         \item Skały
         \item Hangary jeśli zaliczony to znika.
+        \item Zielone beczki przywracające zdrowie(niektóre ukryte pood drzewami)
         
     \end{itemize}
     \subsection{Obiekty dynamiczne}
@@ -212,9 +220,30 @@ Gra \emph{TANKTALE} jest zaprojektowana na urządzenia posiadajace klawiaturę o
     \end{enumerate}
     \item Przegrana
     \begin{enumerate}
-      Strata całego hp.
+     \item Strata całego hp.
     \end{enumerate}
 \end{itemize}
+
+\subsection{Umiejętności}
+\begin{enumerate}
+\item System umiejętności do rozdania co poziom
+    \begin{itemize}
+        \item Zwiększenie prędkości jazdy czołgu + 30.
+        \item Zwiększenie prędkości obrotu czołgu + 0.3.
+        \item Skrócenie czasu ładowania (-0.2s).
+
+        
+    \end{itemize}
+    \item System poziomów
+     \begin{itemize}
+        \item Każdy kolejny poziom wymaga dodatkowych 5 punktów więcej do zdobycia.
+        \item Destroyer dodaje  +8 punków poziomu.
+        \item Czarno-czerwone działko dodaje +2 punky poziomu.
+        \item Tank dodaje       +5 punków poziomu.
+     
+        
+    \end{itemize}
+     \end{enumerate}
     
     \newpage
     
@@ -225,19 +254,23 @@ Gra \emph{TANKTALE} jest zaprojektowana na urządzenia posiadajace klawiaturę o
  
 
     \item Świat w grze jest bliżej nie opisany. Większość obszarów stanowi pustynia. Od czasu do czasu występują wrogie jednoski i obszary bardziej strzeżone. Teren nie jest  górzysty. Plansza ma kształt prostokątu, gdzie baza znajduje się w prawym dolnym rogu. 
-\item Hangary - punkt kontrolny do zaliczenia. Po najechaniu na niego znika.
+\item Hangary - punkt kontrolny do zaliczenia. Po najechaniu na niego znika(zaliczony). Nie wszystkie są strzeżone przez wrogie oddziały. Niektóre po prostu wystarczy znaleźć.
     \end{itemize}
     \subsection{Tło fabularne}
-   Brak specjalnie przedstawionego tła. W menu można zobaczyć cele gry oraz opis przeciwników.
+   Brak specjalnie przedstawionego tła. W menu można zobaczyć cele gry oraz opis sterowania.
     \begin{enumerate}
         \item Brak
         
     \end{enumerate}
     \subsection{Dzwięki i muzyka}
-    
-    
+     \begin{itemize}
+    \item Klaymen's Theme
+    \item Lewel up sound
+    \item Undertale Sound Effect - Intro
+    \item Mittsies - Epitomize - podstawowa ściezka dźwiękowa gry
+    \end{itemize}
     \subsection{Styl graficzny}
-    
+    Staromodny styl 2D z mapą stworzoną z kafelków.
     
     \subsection{Poziomy}
     \begin{enumerate}
@@ -247,29 +280,38 @@ Gra \emph{TANKTALE} jest zaprojektowana na urządzenia posiadajace klawiaturę o
     
 \section{Inne tryby rozgrywki}
     \subsection{Wprowadzenie}
-    W poniższym rozdziale opisane są zidentyfikowane tryby rozgrywki z pominię-ciem głównego trybu (samej rozgrywki), na który przeznaczona została więk-szość poprzednich rozdziałów.
+    W poniższym rozdziale opisane są zidentyfikowane tryby rozgrywki z pominięciem głównego trybu (samej rozgrywki), na który przeznaczona została więk-szość poprzednich rozdziałów.
     
     \subsection{Tryby związane z menu głównym}
     \begin{enumerate}
         \item ekran powitalny
-        Ekran powitalny jest wczytywany i uruchamiany od razu po uruchomieniu apli-kacji. Jego przeznaczeniem jest poinformowanie gracza o włączanej aplikacji iwprowadzenie w klimat gry. W trakcie wyświetlania ekranu powitalnego łado-wane są zasoby gry – w związku z tym, na ekranie jest wyświetlana informacjao procesie ładowania, a po jego zakończeniu pojawia się informacja zachęcającaużytkownika do dotknięcia kliknięcia 'Enter' i przejścia do menu głównego.
+        Ekran powitalny jest wczytywany i uruchamiany od razu po uruchomieniu aplikacji. Jego przeznaczeniem jest poinformowanie gracza o włączanej aplikacji i wprowadzenie w klimat gry. Po zamknięciu ekranu powitalnego wyświetla się menu główne. 
         \item Menu główne
-        Menu główne jest jednym z dwóch głównych trybów rozgrywki, któremu podle-gają inne ekrany i jest uruchamiane po ekranie powitalnym. Umożliwia m.in. pod-jęcie rozgrywki (ostatniej lub na jednym z wcześniej odkrytych poziomów), zmia-nę  ustawień  gry,  odwiedzenie  sklepu  i  przeglądnięcie  innych  informacji. 
+        Menu główne jest jednym z  głównych trybów rozgrywki, któremu podlegają inne ekrany i jest uruchamiane po ekranie powitalnym. Umożliwia m.in. podjęcie rozgrywki  i  przeglądanie  innych  informacji. 
+        
+         \begin{enumerate}
+        \item Spacja - Start 
+        \item H - how to win 
+        \item f - sterowanie 
+    \end{enumerate}
         \item Osiągnięcia
+        Wyświetlany jest czas gry, osiągnięciem jest ukończenie gry w jak najkrótszym czasie. Nie jest wprowadzone podsumowianie z wyświetleniem końcowego czasu, ani tabela najlepszych wyników.
         \item Ustawienia gry
         \begin{itemize}
-            \item zmiana głośności muzyki
-            \item zmiana głoścności efektów dzwiękowych
-            \item Zmmiana ogólnej głośności gry
+            \item zmiana głośności muzyki - nie wprowadzone
+            \item zmiana głoścności efektów dzwiękowych - nie wprowadzone
+            \item Zmmiana ogólnej głośności gry - nie wprowadzone
         \end{itemize}
         
     \end{enumerate}
     
     \subsection{Tryby związane z rozgrywką}
     \begin{enumerate}
-        \item Ekran informacji o poziomie
+        \item Ekran informacji o poziomie - nie wprowadzone
         \item Rozgrywka
-        \item Ekran końca planszy
+        \item Ekran końca gry
+        \item Navigacja
+        \item Umiejętności
         
     \end{enumerate}
         
@@ -278,7 +320,15 @@ Gra \emph{TANKTALE} jest zaprojektowana na urządzenia posiadajace klawiaturę o
     \newpage
     
 \section{Informacje dodatkowe}
-
+    \subsection{Kontynuacja - plany do wprowadzenia na kiedyś: }
+    \begin{itemize}
+        \item Wyświetlanie pozycji najbliższego punktu kontrolnego
+        \item Zapis wyników i podsumowania gry.
+        \item Wprowadzenie większej ilości map przeciwników i dzwięków.
+        \item Możliwość używania minimapy(odkryty teren widoczny).
+        
+    \end{itemize}
+	  
 
 
 \end{document}
