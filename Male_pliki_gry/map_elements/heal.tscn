@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://map_elements/Power up.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/onlyObjects_retina_rotated.png" type="Texture" id=2]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends StaticBody2D
+onready var player = get_parent().get_node(\"Player\")
+var how_many = 20
+signal heal
+
+
+	
+
+
+func _on_Power_up_body_entered(body):
+	if body == player:
+		emit_signal(\"heal\",how_many)
+		queue_free()
+		
+	
+"
+
+[node name="heal" instance=ExtResource( 1 )]
+script = SubResource( 1 )
+
+[node name="Sprite" parent="Power up" index="0"]
+position = Vector2( 0.198425, -0.198426 )
+scale = Vector2( 1.20669, 1.19016 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 220, 137, 48, 48 )
+
+[node name="CollisionShape2D" parent="Power up" index="1"]
+visible = false

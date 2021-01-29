@@ -1,0 +1,19 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TankTale", "TankTale.csproj", "{CC2A0A83-5077-42D6-AD3F-F781BAD479AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	ExportDebug|Any CPU = ExportDebug|Any CPU
+	ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC2A0A83-5077-42D6-AD3F-F781BAD479AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC2A0A83-5077-42D6-AD3F-F781BAD479AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC2A0A83-5077-42D6-AD3F-F781BAD479AD}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{CC2A0A83-5077-42D6-AD3F-F781BAD479AD}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{CC2A0A83-5077-42D6-AD3F-F781BAD479AD}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{CC2A0A83-5077-42D6-AD3F-F781BAD479AD}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/kenney_foliagepack/Spritesheet/foliagePack_default.png" type="Texture" id=1]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 59.7349
+height = 49.834
+
+[node name="Greentree2" type="StaticBody2D"]
+collision_layer = 16
+collision_mask = 0
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 151, 209, 122, 172 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = -46.4058
+margin_top = -35.8634
+margin_right = 54.5942
+margin_bottom = 10.1366
+text = "Jest przenikalne"
+__meta__ = {
+"_edit_use_anchors_": false
+}

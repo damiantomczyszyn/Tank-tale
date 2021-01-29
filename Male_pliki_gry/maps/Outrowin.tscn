@@ -1,0 +1,71 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://maps/Outrowin.gd" type="Script" id=1]
+[ext_resource path="res://assets/Xolonium-Regular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://assets/Backblack.jpg" type="Texture" id=3]
+[ext_resource path="res://assets/w95.png" type="Texture" id=4]
+[ext_resource path="res://sounds/Undertale Sound Effect - Floweys Laugh.wav" type="AudioStream" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 33
+font_data = ExtResource( 2 )
+
+[node name="Outrowin" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Backblack" type="Sprite" parent="."]
+position = Vector2( 1266.22, 633.74 )
+texture = ExtResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 600, 336 )
+
+[node name="powrot do menu" type="Label" parent="Sprite"]
+margin_left = -475.268
+margin_top = -288.751
+margin_right = 77.7322
+margin_bottom = -205.751
+custom_fonts/font = SubResource( 1 )
+text = "Wciśnij G aby wrócić do menu
+Wciśnij F aby zagrać jeszcze raz"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="powrot do menu2" type="Label" parent="Sprite"]
+margin_left = -490.095
+margin_top = -73.6709
+margin_right = 255.905
+margin_bottom = -33.6709
+custom_fonts/font = SubResource( 1 )
+text = " Udało ci się wygrać gratulacje...."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="stat" type="Label" parent="Sprite"]
+visible = false
+margin_left = -457.518
+margin_top = 31.8413
+margin_right = 294.482
+margin_bottom = 71.8413
+custom_fonts/font = SubResource( 1 )
+text = "Twój czas to :"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite2" type="Sprite" parent="."]
+visible = false
+position = Vector2( 428.374, 350.258 )
+texture = ExtResource( 4 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 6.0
+one_shot = true
+autostart = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 5 )
+autoplay = true
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

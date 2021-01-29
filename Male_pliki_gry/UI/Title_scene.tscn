@@ -1,0 +1,118 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://UI/Title_scene.gd" type="Script" id=1]
+[ext_resource path="res://assets/Backblack.jpg" type="Texture" id=2]
+[ext_resource path="res://assets/depositphotos_13324001-stock-illustration-river.jpg" type="Texture" id=3]
+[ext_resource path="res://assets/TT-logo.jpg" type="Texture" id=4]
+[ext_resource path="res://fonts/intro.tres" type="DynamicFont" id=5]
+[ext_resource path="res://sounds/Undertale Sound Effect - Intro.wav" type="AudioStream" id=6]
+[ext_resource path="res://sounds/Klaymens Theme (online-audio-converter.com).wav" type="AudioStream" id=7]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="background" type="Sprite" parent="."]
+position = Vector2( 0.793091, -2.69873 )
+scale = Vector2( 1018.53, 599.599 )
+texture = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 296.949, 26.3893 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="Timer" type="Timer" parent="Sprite"]
+wait_time = 3.0
+one_shot = true
+autostart = true
+
+[node name="Sprite2" type="Sprite" parent="."]
+visible = false
+position = Vector2( 510.44, 300.74 )
+scale = Vector2( 1.70493, 1.41056 )
+texture = ExtResource( 3 )
+
+[node name="Tytuł3" type="Label" parent="Sprite2"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -592.034
+margin_top = -159.309
+margin_right = -282.034
+margin_bottom = -110.309
+rect_scale = Vector2( 1.9, 2 )
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0.854902, 0.0941176, 0.788235, 1 )
+text = "h - How to win"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tytuł2" type="Label" parent="Sprite2"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -585.971
+margin_top = -241.636
+margin_right = -309.971
+margin_bottom = -192.636
+rect_scale = Vector2( 2, 2 )
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0.0156863, 0.0901961, 0.886275, 1 )
+text = "Space - start"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tytuł" type="Label" parent="Sprite2"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -514.809
+margin_top = -426.144
+margin_right = -301.809
+margin_bottom = -377.144
+rect_scale = Vector2( 2, 2 )
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0.886275, 0.0156863, 0.0156863, 1 )
+text = "Tank Tale"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="nie używany" type="Label" parent="Sprite2"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -607.67
+margin_top = -93.0329
+margin_right = -297.67
+margin_bottom = -44.0329
+rect_scale = Vector2( 2, 2 )
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0.176471, 0.882353, 0.203922, 1 )
+text = "f - sterowanie"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="poczekalnia" type="AudioStreamPlayer" parent="Sprite2"]
+stream = ExtResource( 7 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+autoplay = true
+[connection signal="timeout" from="Sprite/Timer" to="." method="_on_Timer_timeout"]

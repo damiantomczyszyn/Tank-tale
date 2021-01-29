@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://map_elements/Punkt_kontrolny.gd" type="Script" id=1]
+[ext_resource path="res://map_elements/bazanextmap.tscn" type="PackedScene" id=2]
+
+[node name="Punkt_kontrolny" instance=ExtResource( 2 )]
+script = ExtResource( 1 )
+
+[node name="Sprite" parent="Power up" index="0"]
+region_rect = Rect2( 529, 1011, 105, 86 )
+
+[node name="CollisionShape2D" parent="Power up" index="1"]
+position = Vector2( 3.57628e-06, 12.5992 )

@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://map_elements/Punkt_kontrolny.tscn" type="PackedScene" id=1]
+[ext_resource path="res://map_elements/specjalnykontrolny.gd" type="Script" id=2]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 35.0753
+
+[node name="Punkt_kontrolny" instance=ExtResource( 1 )]
+script = ExtResource( 2 )
+
+[node name="Sprite" parent="Power up" index="0"]
+region_rect = Rect2( 796, 992, 73, 69 )
+
+[node name="CollisionShape2D" parent="Power up" index="1"]
+position = Vector2( 0.629978, 1.25991 )
+shape = SubResource( 1 )
